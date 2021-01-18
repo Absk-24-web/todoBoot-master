@@ -107,12 +107,12 @@
                                     <td th:text="${task.content}"></td>
                                     <td th:hidden="${task.id}"></td>
                                     <td align="center">
-<!--                                        <a th:href="@{/task/edit/{id}(id=${task.id})}">-->
-<!--                                            <span class="glyphicon glyphicon-edit" data-toggle="tooltip"-->
-<!--                                                  data-placement="top" title="Edit Task"></span></a>-->
-                                    &nbsp; &nbsp; <a data-toggle="modal" data-target="#modal-toEdit"
-                                           th:attr="data-target='#modal-toEdit'+${task.id}">
-                                            <i class="fas fa-edit"></i></a>
+                                        <a th:href="@{/task/edit/{id}(id=${task.id})}">
+                                            <span class="glyphicon glyphicon-edit" data-toggle="tooltip"
+                                                  data-placement="top" title="Edit Task"></span></a>
+<!--                                    &nbsp; &nbsp; <a data-toggle="modal" data-target="#modal-toEdit"-->
+<!--                                           th:attr="data-target='#modal-toEdit'+${task.id}">-->
+<!--                                            <i class="fas fa-edit"></i></a>-->
 
                                          <a data-toggle="modal" data-target="#modal-toTrash"
                                            th:attr="data-target='#modal-toTrash'+${task.id}">
